@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+	<frame title="Java俄罗斯方块" width="1148" height="646" padding="16"
+		border="3" maxRow="5" loseIdx="8">
+		<layer className="ui.LayerBackground" x="0" y="0" w="0" h="0" />
+		<layer className="ui.LayerDataBase" x="42" y="32" w="326" h="275" />
+		<layer className="ui.LayerDisk" x="42" y="339" w="326" h="275" />
+		<layer className="ui.LayerGame" x="410" y="32" w="326" h="582" />
+		<layer className="ui.LayerButton" x="794" y="32" w="326" h="124" />
+		<layer className="ui.LayerNext" x="794" y="188" w="192" h="128" />
+		<layer className="ui.LayerLevel" x="984" y="188" w="134" h="128" />
+		<layer className="ui.LayerPoint" x="794" y="348" w="326" h="160" />
+		<layer className="ui.LayerAbout" x="794" y="516" w="326" h="96" />
+	</frame>
+	<!-- E_ACTS.add(new Point[]{new Point(5,0),new Point(4,0),new Point(6,0),new Point(7,0)});
+		E_ACTS.add(new Point[]{new Point(2,0),new Point(1,0),new Point(3,0),new Point(2,1)});
+		E_ACTS.add(new Point[]{new Point(6,0),new Point(5,0),new Point(7,0),new Point(5,1)});
+		E_ACTS.add(new Point[]{new Point(7,0),new Point(8,0),new Point(6,1),new Point(7,1)});
+		E_ACTS.add(new Point[]{new Point(4,0),new Point(5,0),new Point(4,1),new Point(5,1)});
+		E_ACTS.add(new Point[]{new Point(4,0),new Point(3,0),new Point(5,0),new Point(5,1)});
+		E_ACTS.add(new Point[]{new Point(4,0),new Point(3,0),new Point(4,1),new Point(5,1)}); -->
+	<system MAX_X="9" MAX_Y="17" MIN_X="0" MIN_Y="0">
+		<rect>
+			<points x="5" y="0"/>
+			<points x="4" y="0"/>
+			<points x="6" y="0"/>
+			<points x="7" y="0"/>
+		</rect>
+		<rect>
+			<points x="2" y="0"/>
+			<points x="1" y="0"/>
+			<points x="3" y="0"/>
+			<points x="2" y="1"/>
+		</rect>
+		<rect>
+			<points x="6" y="0"/>
+			<points x="5" y="0"/>
+			<points x="7" y="0"/>
+			<points x="5" y="1"/>
+		</rect>
+		<rect>
+			<points x="7" y="0"/>
+			<points x="8" y="0"/>
+			<points x="6" y="1"/>
+			<points x="7" y="1"/>
+		</rect>
+		<rect>
+			<points x="4" y="0"/>
+			<points x="5" y="0"/>
+			<points x="4" y="1"/>
+			<points x="5" y="1"/>
+		</rect>
+		<rect>
+			<points x="4" y="0"/>
+			<points x="3" y="0"/>
+			<points x="5" y="0"/>
+			<points x="5" y="1"/>
+		</rect>
+		<rect>
+			<points x="4" y="0"/>
+			<points x="3" y="0"/>
+			<points x="4" y="1"/>
+			<points x="5" y="1"/>
+		</rect>
+	</system>
+	<data>
+		<dataA className="dao.DataBase">
+			<param key="driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+			<param key="dbUrl"
+				value="jdbc:sqlserver://localhost:1433;DatabaseName=game_points" />
+			<param key="dbUser" value="gm" />
+			<param key="dbPwd" value="gm123" />
+		</dataA>
+
+		<dataB className="dao.DataDisk">
+			<param key="path" value="data/data.dat" />
+		</dataB>
+		>
+
+	</data>
+
+	system>
+</game>
